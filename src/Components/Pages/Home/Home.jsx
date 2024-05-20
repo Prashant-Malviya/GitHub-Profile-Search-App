@@ -76,13 +76,13 @@ function Home() {
   },[page,limit])
 
   return (
-    <div className="container mx-auto">
-      <div className="bg-gray-800 p-4 rounded-lg h-150 flex flex-col justify-center items-center text-white py-10 px-10">
+    <div className=" lg:w-full w-auto">
+      <div className="bg-gray-800 p-4 rounded-lg h-auto w-auto flex flex-col justify-center items-center text-white py-10 px-auto px-7">
         <h4 className="text-xl font-bold mb-4">GitHub Search User</h4>
         <form className="w-full max-w-sm flex flex-row">
           <input
             type="text"
-            className="w-3/4 px-4 py-2 rounded-md text-black"
+            className="w-auto h-auto px-4 py-2 rounded-md text-black"
             placeholder="Search..."
             onChange={handleQueryInput}
           />
@@ -96,7 +96,7 @@ function Home() {
         </form>
       </div>
 
-      <div className="bg-gray-200 p-4 mt-5 rounded-lg">
+      <div className="bg-gray-200 p-4 mt-5 rounded-lg w-auto h-auto">
         <div className="more-options flex justify-between">
           <label>
             <small>Per Page</small>
